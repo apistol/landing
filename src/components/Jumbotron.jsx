@@ -1,4 +1,6 @@
 import React from 'react'
+import Iphone from "../assets/images/iphone-14.jpg";
+import HoldingIphone from "../assets/images/iphone-hand.png";
 
 const Jumbotron = () => {
     return (
@@ -6,12 +8,21 @@ const Jumbotron = () => {
             <h2 className="title">
                 New
             </h2>
+            <img src={Iphone} alt={""} className={"logo"}/>
             <p className="text">Brillsia</p>
             <span className='description'>
                 a display
             </span>
-            <button className={"button"}>try</button>
-            <button className={"back-button"}>top</button>
+            <ul className={"links"}>
+                <li>
+                    <button className={"button"}>Buy</button>
+                </li>
+                <li>
+                    <a className={"link"}>Learn more</a>
+                </li>
+            </ul>
+
+            <img className={"iphone-img"} src={HoldingIphone} alt={""}/>
         </div>
     )
 }
